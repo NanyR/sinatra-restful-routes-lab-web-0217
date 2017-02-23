@@ -14,13 +14,14 @@
     <form action="/recipes/<%=@recipe.id%>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
       <label for="name">Recipe Name: </label>
-      <input type="text" name="recipe[name]" id="name">
+      <input type="text" name="name" id="name">
       <label for="ingredients">Ingredients: </label>
-      <input type="text" name="recipe[ingredients]" id="ingredients">
+      <input type="text" name="ingredients" id="ingredients">
       <label for="cook_time">Cook time: </label>
-      <input type="text" name="recipe[cook_time]" id="cook_time">
+      <input type="text" name="cook_time" id="cook_time">
 
-      <input type="submit" name="submit" value="submit">
+      <input type="submit"  value="submit">
+
     </form>
 
   </body>
